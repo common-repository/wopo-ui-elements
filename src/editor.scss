@@ -1,0 +1,64 @@
+$color_1: #fff;
+$color_2: #7808d0;
+$color_3: #000;
+$background-color_1: #7808d0;
+$background-color_2: #fff;
+$background-color_3: #000;
+
+.wp-block-wopo-ui-elements-buttons input[type='text']{
+  background-color: $background-color_1;
+	color: $color_1;
+  border: 0;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.wp-block-wopo-ui-elements-buttons .button {
+	line-height: 1;
+	text-decoration: none;
+	display: inline-flex;
+	align-items: center;
+	gap: .75rem;
+	background-color: $background-color_1;
+	color: $color_1;
+	border-radius: 10rem;
+	font-weight: 600;
+	padding: .75rem 1.5rem;
+	padding-left: 20px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	transition: background-color .3s;
+	&:hover {
+		background-color: $background-color_3;
+		.button__icon-wrapper {
+			color: $color_3;
+		}
+		.button__icon-svg {
+			&:first-child {
+				transition: transform .3s ease-in-out;
+				transform: translate(150%, -150%);
+			}
+		}
+		.button__icon-svg--copy {
+			transition: transform .3s ease-in-out .1s;
+			transform: translate(0);
+		}
+	}
+}
+.wp-block-wopo-ui-elements-buttons .button__icon-wrapper {
+	flex-shrink: 0;
+	width: 25px;
+	height: 25px;
+	position: relative;
+	color: $color_2;
+	background-color: $background-color_2;
+	border-radius: 50%;
+	display: grid;
+	place-items: center;
+	overflow: hidden;
+}
+.wp-block-wopo-ui-elements-buttons .button__icon-svg--copy {
+	position: absolute;
+	transform: translate(-150%, 150%);
+}

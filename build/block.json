@@ -1,0 +1,29 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "wopo-ui-elements/buttons",
+  "version": "0.1.0",
+  "title": "Buttons by WoPo UI Elements",
+  "category": "wopo-ui-elements",
+  "icon": "flag",
+  "description": "This block enables you to add buttons.",
+  "supports": {
+    "html": false
+  },
+  "textdomain": "gutenpride",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "attributes": {
+    "message": {
+      "type": "string",
+      "source": "text",
+      "selector": "div",
+      "default": ""
+    },
+    "link": {
+      "type": "string",
+      "default": "#"
+    }
+  }
+}

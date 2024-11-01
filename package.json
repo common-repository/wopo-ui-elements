@@ -1,0 +1,19 @@
+{
+  "name": "wopo-ui-elements",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "wp-scripts start",
+    "build": "wp-scripts build"
+  },
+  "author": "WoPo Web",
+  "license": "ISC",
+  "devDependencies": {
+    "@wordpress/scripts": "^26.18.0"
+  },
+  "dependencies": {
+    "@wordpress/components": "^25.13.0"
+  }
+}
